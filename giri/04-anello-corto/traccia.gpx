@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Roadbook 04 - L'Anello Corto"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>L'Anello Corto - Prosecco, Revine e l'Ascesa al San Boldo</name>
+    <desc>Roadbook 04 v2. Piazza Giorgione (Castelfranco Veneto) - Valdobbiadene - Follina - Revine - Passo San Boldo - Tarzo - Pieve di Soligo - Piazza Giorgione. Circa 148 km. Percorso senza data, valido tutto l'anno TRANNE IL MERCOLEDI (chiusura Osteria La Muda). Da novembre a marzo verificare le condizioni della SP635: il passo e a 706 m e dentro le gallerie il fondo resta umido tutto l'anno. Coordinate verificate su Google Places, agosto 2026.</desc>
+  </metadata>
+
+  <!-- ================= SOSTE E PUNTI OPERATIVI ================= -->
+
+  <wpt lat="45.6728257" lon="11.9254171">
+    <name>START-END Piazza Giorgione</name>
+    <desc>Piazza Giorgione, 31033 Castelfranco Veneto TV. Punto di ritrovo, partenza e chiusura anello. Partire con il serbatoio pieno: fra Follina e Pieve di Soligo ci sono circa 55 km senza distributori affidabili.</desc>
+    <sym>Flag, Blue</sym><type>Start</type>
+  </wpt>
+
+  <wpt lat="45.9829317" lon="12.2268226">
+    <name>APERITIVO - Il Posticino sul Lago</name>
+    <desc>Via Molino di Fratta 89, 31020 Tarzo TV. Tel 0438 1967616. Tavoli a filo d'acqua sul Lago di Santa Maria, fondo pianeggiante, moto a vista. ATTENZIONE: voto 2,8/5, recensioni che segnalano servizio sbrigativo. Per due spritz la posizione vale il rischio, per mangiare no. Alternativa sull'acqua: Area verde di Revine Lago, SP35, 4,4/5, con bar e parcheggio.</desc>
+    <sym>Bar</sym><type>Sosta</type>
+  </wpt>
+
+  <wpt lat="46.0057312" lon="12.1698415">
+    <name>PRANZO - Antica Osteria La Muda</name>
+    <desc>Passo San Boldo 2, 31030 Cison di Valmarino TV. Tel 0437 757253 SOLO WHATSAPP. lamudadisanboldo.it. Osteria piu antica del Veneto, dal 1470. CHIUSA IL MERCOLEDI. Ultime ordinazioni in cucina entro le 14:00. Prenotazione obbligatoria: senza prenotazioni il locale puo chiudere in anticipo. ACCESSO: usciti dall'ULTIMA GALLERIA (tornante n.1) svoltare SUBITO A DESTRA sulla rampa, non si vede dalla carreggiata principale.</desc>
+    <sym>Restaurant</sym><type>Sosta</type>
+  </wpt>
+
+  <wpt lat="45.9793105" lon="12.1749324">
+    <name>SEMAFORO - base della parete, Tovena</name>
+    <desc>Senso unico alternato sulle 5 gallerie elicoidali. Il semaforo e alla BASE della parete, non a meta salita. Ciclo di attesa lungo: se il rosso e appena scattato conviene spegnere il motore. Da qui si vedono le bocche delle gallerie sovrapposte: e la foto migliore della giornata e non si puo fare da nessun altro punto.</desc>
+    <sym>Danger Area</sym><type>Attenzione</type>
+  </wpt>
+
+  <wpt lat="45.8953600" lon="12.1777100">
+    <name>CARBURANTE - Esso Pieve di Soligo</name>
+    <desc>Via Lamberto Chisini 123, 31053 Pieve di Soligo TV. Tel 0438 980387. Feriali 7:00-19:00 senza pausa, sabato fino alle 13:00, domenica chiuso. Rifornimento programmato sulla direttrice di rientro.</desc>
+    <sym>Gas Station</sym><type>Servizio</type>
+  </wpt>
+
+  <!-- ================= PUNTI DI INTERESSE ================= -->
+
+  <wpt lat="45.9542427" lon="12.1181271">
+    <name>POI - Abbazia di Santa Maria, Follina</name>
+    <desc>Via Pallade, 31051 Follina TV. Tel 0438 970231. Ingresso libero. Il chiostro del 1268 e l'elemento che vale la sosta: vasca monolitica al centro e colonne tutte diverse fra loro. Dieci minuti bastano. Centro storico stretto, pavimentazione mista, pedoni.</desc>
+    <sym>Church</sym><type>POI</type>
+  </wpt>
+
+  <wpt lat="45.9699739" lon="12.1432000">
+    <name>POI - Cison di Valmarino e CastelBrando</name>
+    <desc>Borgo fra i piu belli d'Italia, detto il borgo delle acque e dei mulini. Sopra, su uno sperone roccioso, CastelBrando. Attraversamento del centro a velocita molto ridotta, fondo in porfido a tratti, dossi. La salita al castello e ripida e stretta con tornanti in acciottolato: se non si sale, il colpo d'occhio migliore e dalla SP635 in uscita dal borgo.</desc>
+    <sym>Castle</sym><type>POI</type>
+  </wpt>
+
+  <wpt lat="45.9098036" lon="12.0562531">
+    <name>POI - Strada del Prosecco, Guia</name>
+    <desc>Dorsale panoramica fra i terrazzamenti UNESCO delle Colline del Prosecco. Asfalto irregolare a tratti, curve cieche, mezzi agricoli che escono dai filari senza preavviso. In vendemmia i trattori con rimorchio carico occupano l'intera carreggiata.</desc>
+    <sym>Scenic Area</sym><type>POI</type>
+  </wpt>
+
+  <!-- ================= RISERVE ================= -->
+
+  <wpt lat="45.9477650" lon="12.1226161">
+    <name>RISERVA - IP Follina 24h</name>
+    <desc>Via Paoletti 34, 31051 Follina TV. Aperto 24 ore. Ultimo distributore affidabile prima della parte montana: dopo Follina non c'e nulla fino a Pieve di Soligo, circa 55 km scoperti.</desc>
+    <sym>Gas Station</sym><type>Riserva</type>
+  </wpt>
+
+  <wpt lat="46.0134569" lon="12.2277172">
+    <name>RISERVA PRANZO - Rifugio Pian delle Femene</name>
+    <desc>Via S. Francesco, 31020 Revine Lago TV. Tel 327 7155057. Voto 4,2/5, aperto tutti i giorni 9:30-22:00, cucina di montagna. Il ripiego piu solido se La Muda non conferma.</desc>
+    <sym>Restaurant</sym><type>Riserva</type>
+  </wpt>
+
+  <!-- ================= EMERGENZE ================= -->
+
+  <wpt lat="45.6717817" lon="11.9283021">
+    <name>SOS - Ospedale San Giacomo Apostolo</name>
+    <desc>Via dei Carpani 16, Castelfranco Veneto. Tel 0423 7321. Presidio di base.</desc>
+    <sym>Medical Facility</sym><type>Emergenza</type>
+  </wpt>
+
+  <wpt lat="45.8880000" lon="12.2960000">
+    <name>SOS - Ospedale di Conegliano</name>
+    <desc>Via Brigata Bisagno 4, Conegliano. Tel 0438 663111. Presidio del quadrante prealpino. Coordinata indicativa: verificare sul navigatore. Emergenza unica 112. Copertura telefonica discontinua nella gola di Tovena e dentro le gallerie.</desc>
+    <sym>Medical Facility</sym><type>Emergenza</type>
+  </wpt>
+
+  <!-- ================= ROTTA ================= -->
+
+  <rte>
+    <name>Anello Corto San Boldo - 148 km</name>
+    <desc>Ordine dei waypoint: il navigatore calcola le strade. VERIFICARE che dopo il passo la rotta torni indietro su Tovena e NON scollini verso Trichiana e la Valbelluna: sarebbero 60 km in piu e si perderebbe tutta la parte collinare del rientro.</desc>
+
+    <rtept lat="45.6728257" lon="11.9254171"><name>01 START Piazza Giorgione</name>
+      <desc>Partenza ore 09:00 nell'orario tipo. Serbatoio pieno. Direzione Montebelluna - Cornuda - Vidor.</desc></rtept>
+    <rtept lat="45.8615147" lon="12.0387535"><name>02 Vidor</name>
+      <desc>Forza il transito pedemontano.</desc></rtept>
+    <rtept lat="45.9012470" lon="11.9955715"><name>03 Valdobbiadene</name>
+      <desc>Innesto sulla dorsale del Prosecco.</desc></rtept>
+    <rtept lat="45.9098036" lon="12.0562531"><name>04 Guia - Strada del Prosecco</name>
+      <desc>Terrazzamenti UNESCO, curve cieche, mezzi agricoli.</desc></rtept>
+    <rtept lat="45.9417728" lon="12.0899497"><name>05 Miane</name></rtept>
+    <rtept lat="45.9542427" lon="12.1181271"><name>06 Follina - Abbazia</name>
+      <desc>Sosta breve facoltativa al chiostro. Ultimo rifornimento utile a 800 m: IP Via Paoletti, 24h.</desc></rtept>
+    <rtept lat="45.9699739" lon="12.1432000"><name>07 Cison di Valmarino</name>
+      <desc>Attraversamento lento, fondo in porfido. CastelBrando sopra il borgo.</desc></rtept>
+    <rtept lat="45.9829317" lon="12.2268226"><name>08 APERITIVO Il Posticino sul Lago</name>
+      <desc>Arrivo 11:00, ripartenza 11:45 nell'orario tipo.</desc></rtept>
+    <rtept lat="45.9793105" lon="12.1749324"><name>09 Tovena - semaforo</name>
+      <desc>Base della parete. Attacco al passo IN SALITA: coppia in trazione, marcia gia scelta prima di entrare in galleria.</desc></rtept>
+    <rtept lat="46.0057312" lon="12.1698415"><name>10 PRANZO Passo San Boldo - La Muda</name>
+      <desc>Arrivo entro le 12:30. Cucina chiude alle 14:00.</desc></rtept>
+    <rtept lat="45.9793105" lon="12.1749324"><name>11 Tovena - ridiscesa</name>
+      <desc>PUNTO CHIAVE: si torna indietro sulle stesse gallerie. NON proseguire verso Trichiana e la Valbelluna.</desc></rtept>
+    <rtept lat="45.9714609" lon="12.2339768"><name>12 Tarzo</name>
+      <desc>Raccordo collinare, luce pomeridiana radente sui vigneti.</desc></rtept>
+    <rtept lat="45.8953600" lon="12.1777100"><name>13 CARBURANTE Esso Pieve di Soligo</name>
+      <desc>Ultimo punto utile prima della pianura.</desc></rtept>
+    <rtept lat="45.6728257" lon="11.9254171"><name>14 END Piazza Giorgione</name>
+      <desc>Chiusura anello a Castelfranco Veneto.</desc></rtept>
+  </rte>
+</gpx>

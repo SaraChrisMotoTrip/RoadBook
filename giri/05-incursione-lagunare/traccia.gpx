@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Roadbook 05 - Incursione Lagunare"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>Incursione Lagunare - Doppio imbarco per Lido e Pellestrina</name>
+    <desc>Roadbook 05 v5. Piazza Giorgione (Castelfranco Veneto) - Tronchetto - Lido - Alberoni - Pellestrina e ritorno. ATTENZIONE: il percorso comprende due traversate in traghetto. Le tratte via mare NON sono percorribili su strada: il file e diviso in SEI segmenti terrestri separati, da caricare uno alla volta. Se si carica tutto come rotta unica il navigatore tentera di aggirare la laguna via Chioggia aggiungendo oltre 100 km inesistenti. Percorso senza data, valido tutto l'anno tranne il mercoledi. Coordinate verificate su Google Places, agosto 2026.</desc>
+  </metadata>
+
+  <!-- ================= APPRODI E SOSTE ================= -->
+
+  <wpt lat="45.6728257" lon="11.9254171">
+    <name>START-END Piazza Giorgione</name>
+    <desc>Piazza Giorgione, 31033 Castelfranco Veneto TV. Punto di ritrovo, partenza e chiusura anello. Partire con il serbatoio pieno: su Lido e Pellestrina non ci sono distributori affidabili.</desc>
+    <sym>Flag, Blue</sym><type>Start</type>
+  </wpt>
+
+  <wpt lat="45.4380230" lon="12.3039880">
+    <name>IMBARCO 1 - Tronchetto Ferry</name>
+    <desc>Terminal ferry-boat Linea 17, Isola Nova del Tronchetto, Venezia. NON seguire le indicazioni per il parcheggio multipiano: tenere la destra verso Sportello Ferry-Boat. Biglietti a terra PRIMA di incolonnarsi: uno per il veicolo, uno per ogni persona. Le moto NON possono prenotare. Incolonnamento almeno 15 minuti prima, 30 in alta stagione. Traversata 35 minuti, una corsa ogni 50.</desc>
+    <sym>Anchor</sym><type>Imbarco</type>
+  </wpt>
+
+  <wpt lat="45.4256507" lon="12.3782526">
+    <name>SBARCO 1 - Lido San Nicolo</name>
+    <desc>Approdo Linea 17 sul Lido, Riviera San Nicolo. Da qui si scende a SUD verso gli Alberoni: 11 km su asse unico. NON prendere il Gran Viale verso Santa Maria Elisabetta, che porta al centro del Lido.</desc>
+    <sym>Anchor</sym><type>Sbarco</type>
+  </wpt>
+
+  <wpt lat="45.3415260" lon="12.3089790">
+    <name>IMBARCO 2 - Alberoni Faro Rocchetta</name>
+    <desc>Approdo Linea 11 all'estremita sud del Lido. Piazzale ampio e pianeggiante, manovra agevole a pieno carico. Traversata 10 minuti sulla bocca di porto di Malamocco, la piu profonda della laguna.</desc>
+    <sym>Anchor</sym><type>Imbarco</type>
+  </wpt>
+
+  <wpt lat="45.3327333" lon="12.3170274">
+    <name>SBARCO 2 - S. Maria del Mare</name>
+    <desc>Approdo Linea 11 sull'isola di Pellestrina, Strada Comunale dei Murazzi. Punto di raccolta consigliato se si viaggia in piu moto: in fase di stivaggio il personale puo separare i mezzi sui due lati del ponte.</desc>
+    <sym>Anchor</sym><type>Sbarco</type>
+  </wpt>
+
+  <wpt lat="45.3164581" lon="12.3144241">
+    <name>APERITIVO - Bar Gelateria Laguna</name>
+    <desc>San Pietro in Volta 271, 30126 Venezia. Tel 041 273 4274. Voto 4,6/5. Feriali 09:00-13:30 e 16:00/16:30-23:30; sabato e domenica orario continuato. ATTENZIONE alla pausa feriale delle 13:30. Bar-gelateria: la reputazione e sul gelato artigianale, non sullo spritz.</desc>
+    <sym>Bar</sym><type>Sosta</type>
+  </wpt>
+
+  <wpt lat="45.2710470" lon="12.2999700">
+    <name>PRANZO - Ristorante da Celeste</name>
+    <desc>Vianelli 625B, 30126 Venezia (Pellestrina). Tel 041 967355. daceleste.com. Voto 4,5/5. CHIUSO IL MERCOLEDI. Pranzo 12:00-14:30. Prenotazione fortemente consigliata, chiedere esplicitamente un tavolo sull'acqua. Da verificare per telefono l'apertura nei mesi invernali. E il punto di svolta del giro: da qui si torna indietro.</desc>
+    <sym>Restaurant</sym><type>Sosta</type>
+  </wpt>
+
+  <!-- ================= PUNTI DI INTERESSE ================= -->
+
+  <wpt lat="45.3416476" lon="12.3242921">
+    <name>POI - Oasi WWF Dune degli Alberoni</name>
+    <desc>Sistema dunale e pineta all'estremita sud del Lido, accessibile a piedi dal piazzale dell'approdo. Con aria tersa e vento da nord-est dalla spiaggia si vedono le Dolomiti innevate. Attenzione alla sabbia trasportata sull'asfalto nell'ultimo chilometro: si comporta come ghiaia.</desc>
+    <sym>Park</sym><type>POI</type>
+  </wpt>
+
+  <wpt lat="45.3109090" lon="12.3143530">
+    <name>POI - Portosecco</name>
+    <desc>Borgo intermedio dell'isola di Pellestrina, fra la Strada della Laguna e la Strada dei Murazzi. Case basse colorate sul fronte laguna. Passo d'uomo: qui la strada e cortile di casa.</desc>
+    <sym>City (Small)</sym><type>POI</type>
+  </wpt>
+
+  <!-- ================= CARBURANTE ================= -->
+
+  <wpt lat="45.5089360" lon="12.2663964">
+    <name>FUEL 1 - IP Mestre 24h</name>
+    <desc>Via Martiri della Liberta, 30170 Venezia Mestre. Tel 800 987 887. APERTO 24 ORE. Rifornimento consigliato prima del Ponte della Liberta: su Lido e Pellestrina non ci sono distributori affidabili, sono circa 40 km di isole senza possibilita di fare benzina.</desc>
+    <sym>Gas Station</sym><type>Servizio</type>
+  </wpt>
+
+  <wpt lat="45.4849200" lon="12.2735000">
+    <name>FUEL 2 - Esso Mestre (riserva)</name>
+    <desc>Via Martiri della Liberta 400, 30175 Venezia Mestre. Feriali 07:00-19:00, sabato fino alle 13:00, domenica chiuso.</desc>
+    <sym>Gas Station</sym><type>Riserva</type>
+  </wpt>
+
+  <wpt lat="45.4414738" lon="12.3156418">
+    <name>FUEL 3 - Eni Ponte della Liberta (in extremis)</name>
+    <desc>Ponte della Liberta 497/C, 30100 Venezia. Corsia destra in direzione Venezia. SCONSIGLIATO se ci sono alternative: valutazione bassa e recensioni che segnalano addebiti superiori all'erogato sul self. Usare solo se si e gia sul ponte con poca autonomia.</desc>
+    <sym>Gas Station</sym><type>Riserva</type>
+  </wpt>
+
+  <!-- ================= EMERGENZE ================= -->
+
+  <wpt lat="45.4215954" lon="12.3842603">
+    <name>SOS - Punto Primo Intervento Lido</name>
+    <desc>Piazzale Rava, 30126 Lido di Venezia. Tel 340 109 685. Unico presidio sanitario raggiungibile in moto dalle isole. Struttura piccola: per i casi seri il trasporto avviene via mare verso Venezia.</desc>
+    <sym>Medical Facility</sym><type>Emergenza</type>
+  </wpt>
+
+  <wpt lat="45.4410504" lon="12.3435622">
+    <name>SOS - Ospedale SS. Giovanni e Paolo</name>
+    <desc>Pronto Soccorso, Fondamente Nove 6593, 30122 Venezia. Tel 041 529 4111. Aperto 24 ore. ATTENZIONE: e a Venezia Castello, NON al Lido. Dalle isole si raggiunge solo via acqua. Emergenza unica 112.</desc>
+    <sym>Medical Facility</sym><type>Emergenza</type>
+  </wpt>
+
+  <!-- ================= SEGMENTI TERRESTRI - ANDATA ================= -->
+
+  <rte>
+    <name>A1 ANDATA - Terraferma: Piazza Giorgione &gt; Tronchetto</name>
+    <desc>Circa 62 km. Castelfranco - Treviso - Mestre - Ponte della Liberta - Tronchetto. Via autostrada oppure via Castellana-Noalese senza pedaggio. Rifornimento consigliato a Mestre. Arrivare al terminal con 15-30 minuti di margine sulla partenza scelta.</desc>
+    <rtept lat="45.6728257" lon="11.9254171"><name>A1-01 Piazza Giorgione</name></rtept>
+    <rtept lat="45.5089360" lon="12.2663964"><name>A1-02 IP Mestre 24h - rifornimento</name></rtept>
+    <rtept lat="45.4380230" lon="12.3039880"><name>A1-03 Tronchetto - IMBARCO L17</name></rtept>
+  </rte>
+
+  <rte>
+    <name>A2 ANDATA - Lido: San Nicolo &gt; Alberoni</name>
+    <desc>Circa 11 km su asse unico verso SUD. Divieto di sorpasso su gran parte del tracciato e controlli di velocita severi. Molti pedoni, biciclette e bus di linea. Da evitare dal 2 al 12 settembre per la Mostra del Cinema.</desc>
+    <rtept lat="45.4256507" lon="12.3782526"><name>A2-01 Lido San Nicolo - SBARCO</name></rtept>
+    <rtept lat="45.3416476" lon="12.3242921"><name>A2-02 Oasi Dune degli Alberoni</name></rtept>
+    <rtept lat="45.3415260" lon="12.3089790"><name>A2-03 Alberoni Rocchetta - IMBARCO L11</name></rtept>
+  </rte>
+
+  <rte>
+    <name>A3 ANDATA - Pellestrina: S. Maria del Mare &gt; da Celeste</name>
+    <desc>Circa 8 km verso sud, fra la Strada della Laguna e la Strada dei Murazzi. Strade strettissime, pedoni e ciclisti locali. In alcuni tratti l'acqua costeggia la carreggiata senza parapetto. Passo d'uomo.</desc>
+    <rtept lat="45.3327333" lon="12.3170274"><name>A3-01 S. Maria del Mare - SBARCO</name></rtept>
+    <rtept lat="45.3164581" lon="12.3144241"><name>A3-02 San Pietro in Volta - APERITIVO</name></rtept>
+    <rtept lat="45.3109090" lon="12.3143530"><name>A3-03 Portosecco</name></rtept>
+    <rtept lat="45.2710470" lon="12.2999700"><name>A3-04 Pellestrina - PRANZO da Celeste</name></rtept>
+  </rte>
+
+  <!-- ================= SEGMENTI TERRESTRI - RITORNO ================= -->
+
+  <rte>
+    <name>R1 RITORNO - Pellestrina: da Celeste &gt; S. Maria del Mare</name>
+    <desc>Stessa strada a ritroso, circa 8 km. L'ora in cui si chiede il conto decide il pomeriggio: la Linea 11 ha un buco fra le 14:45 e le 15:45.</desc>
+    <rtept lat="45.2710470" lon="12.2999700"><name>R1-01 da Celeste</name></rtept>
+    <rtept lat="45.3327333" lon="12.3170274"><name>R1-02 S. Maria del Mare - IMBARCO L11</name></rtept>
+  </rte>
+
+  <rte>
+    <name>R2 RITORNO - Lido: Alberoni &gt; San Nicolo</name>
+    <desc>Circa 11 km verso NORD. Calcolare 25-30 minuti reali, non 20: e il tratto in cui si perde il traghetto.</desc>
+    <rtept lat="45.3415260" lon="12.3089790"><name>R2-01 Alberoni Rocchetta - SBARCO</name></rtept>
+    <rtept lat="45.4256507" lon="12.3782526"><name>R2-02 Lido San Nicolo - IMBARCO L17</name></rtept>
+  </rte>
+
+  <rte>
+    <name>R3 RITORNO - Terraferma: Tronchetto &gt; Piazza Giorgione</name>
+    <desc>Circa 62 km. Chiusura anello a Castelfranco Veneto.</desc>
+    <rtept lat="45.4380230" lon="12.3039880"><name>R3-01 Tronchetto - SBARCO</name></rtept>
+    <rtept lat="45.6728257" lon="11.9254171"><name>R3-02 Piazza Giorgione - ARRIVO</name></rtept>
+  </rte>
+
+</gpx>
