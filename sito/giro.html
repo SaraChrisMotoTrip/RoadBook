@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadbook — Il giro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+<header class="apertura">
+  <img class="apertura-foto" id="sfondo" src="" alt="">
+  <div class="apertura-in">
+    <p class="occhiello" id="occhiello">Roadbook</p>
+    <h1 id="titolo">Caricamento…</h1>
+    <p class="intro" id="sottotitolo"></p>
+    <div class="riga-amber"></div>
+  </div>
+</header>
+
+<main class="foglio">
+  <a class="indietro" href="index.html">← Tutti i giri</a>
+
+  <div class="blocchi">
+    <section class="blocco">
+      <h3>La guida</h3>
+      <p id="testo-data"></p>
+      <div id="link-guida"></div>
+    </section>
+
+    <section class="blocco">
+      <h3>La traccia</h3>
+      <p>Da caricare sul navigatore o su un'app di mappe.</p>
+      <div id="link-gpx"></div>
+    </section>
+  </div>
+
+  <div class="titolo-sezione">
+    <h2>Il video del giro</h2>
+  </div>
+  <div id="area-video" style="margin-bottom:44px"></div>
+
+  <div id="area-foto"></div>
+</main>
+
+<footer class="piede">Buone strade</footer>
+
+<script src="giri.js"></script>
+<script>
+/* Legge l'indirizzo (giro.html?id=cartella), cerca il giro in giri.js
+   e riempie la pagina. Non serve modificare questo blocco. */
+(function () {
+  var id = new URLSearchParams(window.location.search).get("id");
+  var g = (typeof GIRI !== "undefined") ? GIRI.filter(function (x) { return x.cartella === id; })[0] : null;
+
+  if (!g) {
+    document.getElementById("titolo").textContent = "Giro non trovato";
+    document.getElementById("sottotitolo").textContent = "Torna all'elenco e scegli un percorso.";
+    return;
+  }
+
+  var base = "giri/" + g.cartella + "/";
+
+  document.title = g.titolo + " — Roadbook " + g.numero;
+  document.getElementById("occhiello").textContent = "Roadbook " + g.numero + " · " + g.zona;
+  document.getElementById("titolo").innerHTML = g.titolo + "<span>" + g.sottotitolo + "</span>";
+  document.getElementById("sottotitolo").textContent = g.descrizione;
+  document.getElementById("testo-data").textContent = g.data || "";
+
+  if (g.copertina) document.getElementById("sfondo").src = base + g.copertina;
+
+  /* --- guida: versione da leggere e versione da scaricare --- */
+  var guida = "";
+  if (g.roadbook) guida += '<a class="bottone" href="' + base + g.roadbook + '">Apri la guida</a>';
+  if (g.pdf)      guida += '<a class="bottone chiaro" href="' + base + g.pdf + '" download>Scarica il PDF</a>';
+  document.getElementById("link-guida").innerHTML =
+    guida || '<p class="vuoto">Guida non ancora disponibile.</p>';
+
+  /* --- traccia GPX --- */
+  document.getElementById("link-gpx").innerHTML = g.gpx
+    ? '<a class="bottone" href="' + base + g.gpx + '" download>Scarica il GPX</a>'
+    : '<p class="vuoto">Traccia non ancora disponibile.</p>';
+
+  /* --- video: YouTube, file caricato, oppure post Instagram --- */
+  var video = document.getElementById("area-video");
+  if (g.youtube) {
+    video.innerHTML =
+      '<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/' + g.youtube +
+      '" title="Video del giro" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+  } else if (g.mp4) {
+    video.innerHTML =
+      '<div class="video"><video controls preload="metadata" poster="' + base + (g.copertina || "") + '">' +
+      '<source src="' + base + g.mp4 + '" type="video/mp4"></video></div>';
+  } else if (g.instagram) {
+    /* Il post deve essere pubblico. Se lo script di Instagram non carica,
+       resta comunque visibile il link al post. */
+    video.innerHTML =
+      '<div class="instagram">' +
+        '<blockquote class="instagram-media" data-instgrm-captioned ' +
+        'data-instgrm-permalink="' + g.instagram + '" data-instgrm-version="14">' +
+        '<a href="' + g.instagram + '" target="_blank" rel="noopener">Guarda il video su Instagram</a>' +
+        '</blockquote>' +
+      '</div>' +
+      '<a class="bottone chiaro" style="max-width:540px" href="' + g.instagram +
+      '" target="_blank" rel="noopener">Apri il post su Instagram</a>';
+
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.instagram.com/embed.js";
+    document.body.appendChild(s);
+  } else {
+    video.innerHTML = '<p class="vuoto">Video non ancora caricato.</p>';
+  }
+
+  /* --- foto del giro --- */
+  if (g.foto && g.foto.length) {
+    var foto = g.foto.map(function (f) {
+      return '<a href="' + base + f + '"><img src="' + base + f + '" alt="Foto del giro" loading="lazy"></a>';
+    }).join("");
+    document.getElementById("area-foto").innerHTML =
+      '<div class="titolo-sezione"><h2>Le foto</h2></div><div class="galleria">' + foto + '</div>';
+  }
+})();
+</script>
+
+</body>
+</html>
