@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadbook — I giri in moto</title>
+<meta name="description" content="Raccolta di roadbook per moto: guida da sfogliare, PDF da stampare, traccia GPX e video del giro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+<header class="apertura">
+  <img class="apertura-foto" src="media/hero.jpg" alt="">
+  <div class="apertura-in">
+    <p class="occhiello">Itinerari in moto · Veneto</p>
+    <h1>Roadbook<span>Le strade, i passi, le soste. Un giro per volta.</span></h1>
+    <p class="intro">Ogni percorso ha la guida completa da sfogliare, il PDF da stampare e portarsi dietro, la traccia GPX per il navigatore e — quando c'è — il video del giro.</p>
+    <div class="riga-amber"></div>
+  </div>
+</header>
+
+<main class="foglio">
+  <div class="titolo-sezione">
+    <h2>I percorsi</h2>
+    <span class="nota" id="conteggio"></span>
+  </div>
+
+  <div class="griglia" id="griglia"></div>
+</main>
+
+<footer class="piede">Buone strade</footer>
+
+<!-- prima i dati, poi il codice che li disegna -->
+<script src="giri.js"></script>
+<script>
+/* Disegna un riquadro per ogni giro presente in giri.js.
+   Non serve modificare questo blocco per aggiungere un percorso. */
+(function () {
+  var griglia = document.getElementById("griglia");
+
+  if (typeof GIRI === "undefined" || GIRI.length === 0) {
+    griglia.innerHTML = '<p class="vuoto">Nessun giro inserito. Aggiungi il primo nel file giri.js.</p>';
+    return;
+  }
+
+  document.getElementById("conteggio").textContent =
+    GIRI.length + (GIRI.length === 1 ? " percorso" : " percorsi");
+
+  GIRI.forEach(function (g) {
+    var base = "giri/" + g.cartella + "/";
+
+    var numeri = (g.numeri || []).map(function (v) {
+      return '<div><span class="n">' + v.n + '</span><span class="e">' + v.e + '</span></div>';
+    }).join("");
+
+    var a = document.createElement("a");
+    a.className = "scheda";
+    a.href = "giro.html?id=" + encodeURIComponent(g.cartella);
+    a.innerHTML =
+      '<div class="scheda-foto">' +
+        '<img src="' + base + g.copertina + '" alt="' + g.titolo + '" loading="lazy">' +
+        '<div class="targa"><b>' + g.numero + '</b><span>Roadbook</span></div>' +
+      '</div>' +
+      '<div class="scheda-testo">' +
+        '<p class="scheda-zona">' + g.zona + '</p>' +
+        '<h3>' + g.titolo + '<span>' + g.sottotitolo + '</span></h3>' +
+        '<p>' + g.descrizione + '</p>' +
+      '</div>' +
+      (numeri ? '<div class="numeri">' + numeri + '</div>' : '');
+
+    griglia.appendChild(a);
+  });
+})();
+</script>
+
+</body>
+</html>
