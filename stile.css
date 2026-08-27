@@ -22,10 +22,12 @@
 }
 
 *{ box-sizing:border-box; }
-html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; overflow-x:hidden; }
+img{ max-width:100%; }
 
 body{
   margin:0;
+  overflow-x:hidden;          /* nessuno scorrimento laterale */
   background:var(--cream);
   color:var(--ink);
   font-family:var(--testo);
@@ -75,6 +77,7 @@ a{ color:var(--navy); }
   padding:64px 22px 52px;
 }
 .apertura h1{
+  overflow-wrap:anywhere;
   font-family:var(--display);
   font-weight:700;
   font-size:clamp(40px, 9vw, 68px);
@@ -141,12 +144,13 @@ a{ color:var(--navy); }
 /* ---------- griglia dei giri ---------- */
 .griglia{
   display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns:repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap:28px;
 }
 
 .scheda{
   position:relative;
+  min-width:0;
   display:flex;
   flex-direction:column;
   background:var(--carta);
@@ -233,7 +237,8 @@ a{ color:var(--navy); }
   margin-top:auto;
 }
 .numeri div{
-  flex:1;
+  flex:1 1 0;
+  min-width:0;
   text-align:center;
   padding:14px 4px;
   border-right:1px solid rgba(255,255,255,.16);
@@ -251,7 +256,8 @@ a{ color:var(--navy); }
   display:block;
   font-family:var(--display);
   font-size:11.5px;
-  letter-spacing:1.8px;
+  letter-spacing:1.4px;
+  overflow-wrap:anywhere;
   text-transform:uppercase;
   color:#9DA9C1;
   margin-top:6px;
@@ -260,11 +266,12 @@ a{ color:var(--navy); }
 /* ---------- pagina del singolo giro ---------- */
 .blocchi{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(min(100%, 270px), 1fr));
   gap:26px;
   margin-bottom:44px;
 }
 .blocco{
+  min-width:0;
   background:var(--carta);
   border:1px solid var(--line);
   border-top:4px solid var(--amber);
@@ -374,6 +381,9 @@ a{ color:var(--navy); }
 
 @media (max-width:600px){
   body{ font-size:16.5px; }
+  .numeri .n{ font-size:22px; }
+  .numeri .e{ font-size:10.5px; letter-spacing:.8px; }
+  .numeri div{ padding:12px 2px; }
   .apertura-in{ padding:48px 20px 40px; }
   .foglio{ padding:34px 20px 50px; }
   .titolo-sezione .nota{ display:none; }
