@@ -81,6 +81,29 @@ const GIRI = [
       { n: "423",  e: "quota max" },
       { n: "37°",  e: "l'acqua" }
     ]
+  },
+  {
+    cartella: "07-anello-del-delta",
+    numero:      "04",
+    zona:        "Delta del Po",
+    titolo:      "L'Anello del Delta",
+    sottotitolo: "Argini, valli e ponti di barche",
+    data:        "Giro in giornata — valido tutto l'anno, mai lunedì né martedì",
+    descrizione: "Novanta chilometri di argini fra laguna e mare aperto, i casoni dei pescatori, i fenicotteri della Sacca di Scardovari e due ponti di barche galleggianti da attraversare a passo d'uomo.",
+    copertina: "cover.jpg",
+    roadbook: "index.html",
+    pdf:      "roadbook.pdf",
+    gpx:      "traccia.gpx",
+    youtube: "",
+    mp4:     "",
+    instagram: "https://www.instagram.com/reel/DcmUUghRyu5/",
+    foto: [],
+    numeri: [
+      { n: "≈350", e: "chilometri" },
+      { n: "2",    e: "ponti di barche" },
+      { n: "6h 30'", e: "in sella" },
+      { n: "0",    e: "dislivello" }
+    ]
   }
   // ,{ ... prossimo giro qui ... }
 ];
