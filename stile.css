@@ -329,8 +329,12 @@ a{ color:inherit; }
 
 .blocchi{
   display:grid; gap:18px;
-  grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));
+  grid-template-columns:1fr;
+  align-items:start;
   margin-bottom:40px;
+}
+@media (min-width:760px){
+  .blocchi{ grid-template-columns:repeat(2,1fr); }   /* quattro riquadri, due per riga */
 }
 .blocco{
   background:var(--pannello);
@@ -397,17 +401,25 @@ a:focus-visible,.scheda:focus-visible{
   display:block;
   background:#fff;                 /* la mappa è chiara: le do una cornice bianca */
   border:1px solid var(--bordo);
-  border-radius:var(--raggio);
+  border-radius:10px;
   overflow:hidden;
-  margin-bottom:40px;
+  padding:10px 0;
   transition:border-color .18s ease;
 }
 .mappa:hover{ border-color:var(--fluo); }
 .mappa img{
   display:block;
-  width:100%; height:auto;
+  width:auto; height:auto;
+  max-width:100%;
+  max-height:290px;                /* la mappa è verticale: la tengo bassa */
   margin:0 auto;
-  max-width:560px;                 /* la mappa è verticale: non la stiro */
+}
+.sotto-mappa{
+  margin:10px 0 0 !important;
+  font-family:"Barlow Condensed",sans-serif;
+  text-transform:uppercase; letter-spacing:.16em;
+  font-size:12px; color:var(--testo-2);
+  text-align:center;
 }
 
 /* --- video e foto ------------------------------------------- */

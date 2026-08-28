@@ -43,15 +43,22 @@
       un po' diverso dal nostro. Controlla le impostazioni del dispositivo e tieni il roadbook
       come riferimento del giro originale.</p>
     </section>
-  </div>
 
-  <!-- la mappa compare da sola se nella cartella del giro c'è mappa.jpg -->
-  <div id="area-mappa"></div>
+    <!-- compare da solo se nella cartella del giro c'è mappa.jpg -->
+    <section class="blocco" id="blocco-mappa" hidden>
+      <h3>La mappa</h3>
+      <p>Lo schema del giro con i punti di interesse.</p>
+      <a class="mappa" id="link-mappa" href="" target="_blank" rel="noopener">
+        <img id="img-mappa" src="" alt="Mappa del percorso" loading="lazy">
+      </a>
+      <p class="sotto-mappa">Tocca per ingrandire</p>
+    </section>
 
-  <div class="titolo-sezione">
-    <h2>Il video del giro</h2>
+    <section class="blocco">
+      <h3>Il video del giro</h3>
+      <div id="area-video"></div>
+    </section>
   </div>
-  <div id="area-video" style="margin-bottom:40px"></div>
 
   <div id="area-foto"></div>
 </main>
@@ -101,11 +108,10 @@
     var indirizzo = base + (g.mappa || "mappa.jpg");
     var prova = new Image();
     prova.onload = function () {
-      document.getElementById("area-mappa").innerHTML =
-        '<div class="titolo-sezione"><h2>La mappa</h2>' +
-        '<span class="nota">tocca per ingrandire</span></div>' +
-        '<a class="mappa" href="' + indirizzo + '" target="_blank" rel="noopener">' +
-        '<img src="' + indirizzo + '" alt="Mappa del percorso ' + g.titolo + '" loading="lazy"></a>';
+      document.getElementById("link-mappa").href = indirizzo;
+      document.getElementById("img-mappa").src = indirizzo;
+      document.getElementById("img-mappa").alt = "Mappa del percorso " + g.titolo;
+      document.getElementById("blocco-mappa").hidden = false;
     };
     prova.src = indirizzo;
   })();
@@ -128,7 +134,7 @@
         '<a href="' + g.instagram + '" target="_blank" rel="noopener">Guarda il video su Instagram</a>' +
         '</blockquote>' +
       '</div>' +
-      '<a class="bottone chiaro" style="max-width:540px;margin:0 auto" href="' + g.instagram +
+      '<a class="bottone chiaro" href="' + g.instagram +
       '" target="_blank" rel="noopener">Apri il post su Instagram</a>';
 
     var s = document.createElement("script");
