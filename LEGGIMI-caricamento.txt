@@ -1,0 +1,39 @@
+CARTELLA SITO — cosa contiene e come caricarla
+==============================================
+
+Questi sono SOLO i file che cambiano. Tutto il resto del repository
+(giri.js, le copertine cover.jpg, i roadbook HTML, i PDF, i GPX)
+NON e' toccato e deve restare com'e' su GitHub.
+
+CONTENUTO
+---------
+index.html   -> home: sfondo con la moto, tondo con la foto di Sara e Christian
+giro.html    -> pagina del percorso: sezione "La mappa" + nota sul file GPX
+stile.css    -> grafica nera con accenti giallo fluo
+media/moto.jpg
+media/noi.jpg
+giri/04-anello-corto/mappa.jpg          (passo San Boldo)
+giri/05-incursione-lagunare/mappa.jpg   (giro di Venezia)
+
+ORDINE DI CARICAMENTO SU GITHUB
+-------------------------------
+1) Estrai lo zip PRIMA di caricare (non caricare mai lo zip).
+2) Primo caricamento: trascina i tre file sciolti
+   index.html, giro.html, stile.css  -> aspetta che compaiano tutti e tre
+   nell'elenco, poi Commit changes.
+3) Secondo caricamento: trascina la cartella media
+   -> aspetta il completamento, poi Commit changes.
+4) Terzo caricamento: trascina la cartella giri
+   -> aspetta il completamento, poi Commit changes.
+
+IMPORTANTE: aspetta sempre che l'elenco dei file sia completo prima di
+fare Commit. I caricamenti interrotti a meta' sono la causa delle
+copertine sparite.
+
+VERIFICA
+--------
+- Home: sfondo con la moto e tondo con la vostra foto.
+- Le copertine dei percorsi devono essere quelle di sempre.
+- Aprendo un giro: sotto i pulsanti di download compare "La mappa".
+- Nel riquadro della traccia compare la nota sul file GPX.
+Se qualcosa non si vede, fai una ricarica forzata della pagina.

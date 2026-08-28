@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Roadbook — Il giro</title>
+<meta name="theme-color" content="#0B0C0D">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,15 +12,15 @@
 </head>
 <body>
 
-<header class="apertura">
-  <img class="apertura-foto" id="sfondo" src="" alt="">
-  <div class="apertura-in">
+<header class="testata">
+  <img class="testata-foto" id="sfondo" src="" alt="">
+  <div class="testata-in">
     <p class="occhiello" id="occhiello">Roadbook</p>
     <h1 id="titolo">Caricamento…</h1>
-    <p class="intro" id="sottotitolo"></p>
-    <div class="riga-amber"></div>
+    <p id="sottotitolo"></p>
   </div>
 </header>
+<div class="strisce"></div>
 
 <main class="foglio">
   <a class="indietro" href="index.html">← Tutti i giri</a>
@@ -35,18 +36,27 @@
       <h3>La traccia</h3>
       <p>Da caricare sul navigatore o su un'app di mappe.</p>
       <div id="link-gpx"></div>
+      <p class="gpx-nota"><strong>Nota sul file GPX</strong> — È un GPX standard, con i punti
+      di interesse del giro già inseriti. Ogni navigatore però ricalcola a modo suo la strada
+      fra un punto e l'altro, secondo le impostazioni che ha attive (percorso più breve, più
+      veloce, evita autostrade, modalità curve): lo stesso file può quindi generare un tracciato
+      un po' diverso dal nostro. Controlla le impostazioni del dispositivo e tieni il roadbook
+      come riferimento del giro originale.</p>
     </section>
   </div>
+
+  <!-- la mappa compare da sola se nella cartella del giro c'è mappa.jpg -->
+  <div id="area-mappa"></div>
 
   <div class="titolo-sezione">
     <h2>Il video del giro</h2>
   </div>
-  <div id="area-video" style="margin-bottom:44px"></div>
+  <div id="area-video" style="margin-bottom:40px"></div>
 
   <div id="area-foto"></div>
 </main>
 
-<footer class="piede">Buone strade</footer>
+<footer class="piede">Buone strade <b>·</b> Roadbook</footer>
 
 <script src="giri.js"></script>
 <script>
@@ -66,9 +76,9 @@
 
   document.title = g.titolo + " — Roadbook " + g.numero;
   document.getElementById("occhiello").textContent = "Roadbook " + g.numero + " · " + g.zona;
-  document.getElementById("titolo").innerHTML = g.titolo + "<span>" + g.sottotitolo + "</span>";
-  document.getElementById("sottotitolo").textContent = g.descrizione;
-  document.getElementById("testo-data").textContent = g.data || "";
+  document.getElementById("titolo").textContent = g.titolo;
+  document.getElementById("sottotitolo").textContent = g.sottotitolo;
+  document.getElementById("testo-data").textContent = g.data || g.descrizione;
 
   if (g.copertina) document.getElementById("sfondo").src = base + g.copertina;
 
@@ -84,6 +94,22 @@
     ? '<a class="bottone" href="' + base + g.gpx + '" download>Scarica il GPX</a>'
     : '<p class="vuoto">Traccia non ancora disponibile.</p>';
 
+  /* --- mappa del percorso ---
+     Il file si chiama mappa.jpg e sta nella cartella del giro.
+     Se non c'è, la sezione non compare: non serve scrivere nulla in giri.js. */
+  (function () {
+    var indirizzo = base + (g.mappa || "mappa.jpg");
+    var prova = new Image();
+    prova.onload = function () {
+      document.getElementById("area-mappa").innerHTML =
+        '<div class="titolo-sezione"><h2>La mappa</h2>' +
+        '<span class="nota">tocca per ingrandire</span></div>' +
+        '<a class="mappa" href="' + indirizzo + '" target="_blank" rel="noopener">' +
+        '<img src="' + indirizzo + '" alt="Mappa del percorso ' + g.titolo + '" loading="lazy"></a>';
+    };
+    prova.src = indirizzo;
+  })();
+
   /* --- video: YouTube, file caricato, oppure post Instagram --- */
   var video = document.getElementById("area-video");
   if (g.youtube) {
@@ -95,8 +121,6 @@
       '<div class="video"><video controls preload="metadata" poster="' + base + (g.copertina || "") + '">' +
       '<source src="' + base + g.mp4 + '" type="video/mp4"></video></div>';
   } else if (g.instagram) {
-    /* Il post deve essere pubblico. Se lo script di Instagram non carica,
-       resta comunque visibile il link al post. */
     video.innerHTML =
       '<div class="instagram">' +
         '<blockquote class="instagram-media" data-instgrm-captioned ' +
@@ -104,7 +128,7 @@
         '<a href="' + g.instagram + '" target="_blank" rel="noopener">Guarda il video su Instagram</a>' +
         '</blockquote>' +
       '</div>' +
-      '<a class="bottone chiaro" style="max-width:540px" href="' + g.instagram +
+      '<a class="bottone chiaro" style="max-width:540px;margin:0 auto" href="' + g.instagram +
       '" target="_blank" rel="noopener">Apri il post su Instagram</a>';
 
     var s = document.createElement("script");
