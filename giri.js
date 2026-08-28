@@ -72,9 +72,29 @@ const GIRI = [
       { n: "≈22",  e: "km sull'acqua" },
       { n: "4",    e: "imbarchi" },
       { n: "42 €", e: "traghetti" }
+     ,{
+    cartella: "06-risalita-della-forra",
+    numero: "03",
+    zona: "Lago di Garda",
+    titolo: "La Risalita della Forra",
+    sottotitolo: "Il Garda, la roccia e l'acqua a 37 gradi",
+    descrizione: "Sei chilometri di asfalto scavati dentro una gola, una terrazza sospesa a 350 metri sul lago e la sera nell'acqua termale a 37 gradi. Due giorni, una notte.",
+    data: "Due giorni e una notte — percorso senza data fissa",
+    copertina: "cover.jpg",
+    roadbook: "index.html",
+    pdf: "roadbook.pdf",
+    gpx: "traccia.gpx",
+    youtube: "",
+    mp4: "",
+    instagram: "",
+    foto: [],
+    numeri: [
+      { n: "435", e: "km" },
+      { n: "2", e: "giorni" },
+      { n: "423", e: "m slm" },
+      { n: "37°", e: "l'acqua" }
     ]
   }
-
   // ,{ ... prossimo giro qui ... }
 
 ];
