@@ -73,7 +73,7 @@ const GIRI = [
     gpx:      "traccia.gpx",
     youtube: "",
     mp4:     "",
-    instagram: "",
+    instagram: "https://www.instagram.com/reel/Dcl-GNUsgPB/",
     foto: [],
     numeri: [
       { n: "≈435", e: "chilometri" },
@@ -84,4 +84,3 @@ const GIRI = [
   }
   // ,{ ... prossimo giro qui ... }
 ];
- 
