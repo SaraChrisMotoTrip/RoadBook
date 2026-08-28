@@ -75,15 +75,29 @@ a{ color:inherit; }
   position:absolute; inset:0;
   width:100%; height:100%;
   object-fit:cover; object-position:50% 62%;
-  opacity:.34;
-  filter:grayscale(.35) contrast(1.04);
+  opacity:.82;
+  filter:grayscale(.08) contrast(1.06) brightness(1.14);
 }
 
-.apertura::after{        /* velo scuro per far leggere il testo */
+.apertura::after{        /* velo scuro: scherma il testo ma lascia vedere la moto */
   content:""; position:absolute; inset:0;
   background:linear-gradient(180deg,
-    rgba(11,12,13,.88) 0%, rgba(11,12,13,.80) 40%,
-    rgba(11,12,13,.90) 72%, rgba(11,12,13,.97) 100%);
+    rgba(11,12,13,.86) 0%, rgba(11,12,13,.62) 42%,
+    rgba(11,12,13,.76) 74%, rgba(11,12,13,.94) 100%);
+}
+
+@media (min-width:900px){
+  /* sul largo il testo sta a sinistra: schermo solo quella metà,
+     così la moto resta ben visibile sulla destra */
+  .apertura::after{
+    background:
+      linear-gradient(100deg,
+        rgba(11,12,13,.90) 0%,  rgba(11,12,13,.82) 36%,
+        rgba(11,12,13,.34) 62%, rgba(11,12,13,.10) 100%),
+      linear-gradient(180deg,
+        rgba(11,12,13,.38) 0%,  rgba(11,12,13,.10) 45%,
+        rgba(11,12,13,.72) 100%);
+  }
 }
 
 .apertura-in{
@@ -115,11 +129,11 @@ a{ color:inherit; }
   color:#C6CBCF;                 /* più chiaro: deve leggersi sopra la foto */
   font-size:16px;
   margin:0 0 24px;
-  text-shadow:0 1px 14px rgba(11,12,13,.95);
+  text-shadow:0 1px 4px rgba(11,12,13,1), 0 2px 18px rgba(11,12,13,.95);
 }
 
 .apertura h1,
-.apertura h1 span{ text-shadow:0 2px 18px rgba(11,12,13,.85); }
+.apertura h1 span{ text-shadow:0 1px 4px rgba(11,12,13,1), 0 2px 20px rgba(11,12,13,.9); }
 .apertura h1 span{ color:#C6CBCF; }
 
 .apertura-testo .strisce{ max-width:230px; }

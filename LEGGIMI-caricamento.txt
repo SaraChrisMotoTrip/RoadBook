@@ -14,6 +14,10 @@ media/moto.jpg
 media/noi.jpg
 giri/04-anello-corto/mappa.jpg          (passo San Boldo)
 giri/05-incursione-lagunare/mappa.jpg   (giro di Venezia)
+giri/06-risalita-della-forra/           GIRO NUOVO, cartella completa:
+    cover.jpg  index.html  roadbook.pdf  traccia.gpx  mappa.jpg
+DA-AGGIUNGERE-A-giri.js.txt  -> istruzioni per far comparire il terzo giro
+                                (questo file NON va caricato su GitHub)
 
 ORDINE DI CARICAMENTO SU GITHUB
 -------------------------------
@@ -24,7 +28,11 @@ ORDINE DI CARICAMENTO SU GITHUB
 3) Secondo caricamento: trascina la cartella media
    -> aspetta il completamento, poi Commit changes.
 4) Terzo caricamento: trascina la cartella giri
-   -> aspetta il completamento, poi Commit changes.
+   -> e' la piu' pesante (circa 3 MB per il giro nuovo): aspetta che
+      TUTTI i file compaiano nell'elenco, poi Commit changes.
+
+5) Ultimo passo: modifica giri.js seguendo DA-AGGIUNGERE-A-giri.js.txt.
+   Finche' non lo fai, il terzo giro non compare in home.
 
 IMPORTANTE: aspetta sempre che l'elenco dei file sia completo prima di
 fare Commit. I caricamenti interrotti a meta' sono la causa delle
