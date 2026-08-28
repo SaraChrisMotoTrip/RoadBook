@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Roadbook 03 - La Risalita della Forra"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>La Risalita della Forra - Garda e Terme</name>
+    <desc>Roadbook 03 v2. Due giorni, una notte. Piazza Giorgione (Castelfranco Veneto) - Desenzano - Gardesana Occidentale - Strada della Forra - Tremosine - Limone - Riva del Garda - Gardesana Orientale - Cola di Lazise (pernottamento termale) - rientro autostradale. Circa 435 km totali: 290 il primo giorno, 145 il secondo. Percorso senza data. ATTENZIONE: la SP38 Strada della Forra e a SENSO UNICO PERMANENTE IN SALITA e puo essere chiusa per frane o maltempo. Verificare sempre su stradadellaforra.com prima di partire. Coordinate verificate su Google Places, agosto 2026.</desc>
+  </metadata>
+
+  <!-- ================= SOSTE E PUNTI OPERATIVI ================= -->
+
+  <wpt lat="45.6728257" lon="11.9254171">
+    <name>START-END Piazza Giorgione</name>
+    <desc>Piazza Giorgione, 31033 Castelfranco Veneto TV. Ritrovo, partenza e chiusura anello. Il pieno vero si fa a Desenzano, non qui.</desc>
+    <sym>Flag, Blue</sym><type>Start</type>
+  </wpt>
+
+  <wpt lat="45.4561000" lon="10.5230000">
+    <name>CARBURANTE - Q8 easy Desenzano</name>
+    <desc>Via Mantova 7, 25015 Desenzano del Garda BS. Aperto 24 h, SELF-SERVICE senza operatore. Subito fuori dal casello A4. ATTENZIONE: valutazione 3,6/5 con recensioni di importi addebitati e non erogati: conservare lo scontrino e verificare l'erogazione prima di allontanarsi. Un pieno qui copre Gardesana, Forra, Vesio, Limone, Riva e tutta la SS249 fino a Cola.</desc>
+    <sym>Gas Station</sym><type>Servizio</type>
+  </wpt>
+
+  <wpt lat="45.7741000" lon="10.7659000">
+    <name>SP38 - imbocco Strada della Forra</name>
+    <desc>Bivio dalla Gardesana al Porto di Tremosine. SENSO UNICO PERMANENTE IN SALITA fino al ristorante La Forra: non e piu una fascia oraria, vale sempre. Non si scende in nessun momento. Asfalto umido per stillicidio tutto l'anno, anche in agosto. Clacson nelle curve cieche, divieto di sorpasso. Vietati veicoli oltre 2,20 m di larghezza e 3,00 m di altezza, autotreni, autocaravan e rimorchi.</desc>
+    <sym>Danger Area</sym><type>Attenzione</type>
+  </wpt>
+
+  <wpt lat="45.7686000" lon="10.7593000">
+    <name>SOSTA - Terrazza del Brivido</name>
+    <desc>Hotel Paradiso, Viale Europa 19, Pieve di Tremosine sul Garda BS. Tel 0365 953012. Aperto tutti i giorni 9:00-21:00. Voto 4,4/5. Piattaforma sbalzata 350 m sul vuoto del Garda. Accesso dalla hall con consumazione gradita, moto in sosta esterna. Le recensioni concordano: si viene per la vista, non per la cucina.</desc>
+    <sym>Scenic Area</sym><type>Sosta</type>
+  </wpt>
+
+  <wpt lat="45.8857400" lon="10.8392753">
+    <name>PRANZO G1 - Ristorante Pizzeria Leon d'Oro</name>
+    <desc>Via Fiume 28, 38066 Riva del Garda TN. Tel 0464 552341. Voto 4,7/5 su oltre 9.600 recensioni. APERTO TUTTI I GIORNI 11:30-23:00, orario continuato. Alternative: Bellavista, Piazza Cesare Battisti 4, dalle 10:30; Kapuziner Am See, Piazza III Novembre 5, dalle 11:30.</desc>
+    <sym>Restaurant</sym><type>Sosta</type>
+  </wpt>
+
+  <wpt lat="45.8841000" lon="10.8439000">
+    <name>PARCHEGGIO MOTO - Riva del Garda</name>
+    <desc>Via Giardini di Porta Orientale, Riva del Garda. Strisce blu gratuite per 2 ore, a pochi minuti a piedi dal centro storico. Il centro e a traffico limitato: non tentare di arrivare in piazza.</desc>
+    <sym>Parking Area</sym><type>Servizio</type>
+  </wpt>
+
+  <wpt lat="45.4740076" lon="10.7432898">
+    <name>NOTTE - Parco Termale Villa dei Cedri</name>
+    <desc>Piazza di Sopra 4, 37017 Cola di Lazise VR. Tel 045 759 0988. villadeicedri.com. Voto 4,6/5 su oltre 7.100 recensioni. Sorgente termale 37-42 gradi, 13 ettari di parco. DA PORTARE OBBLIGATORIAMENTE, la struttura non noleggia nulla: accappatoi, teli mare, costumi, ciabatte e CUFFIA DA PISCINA, obbligatoria per legge in tutte le piscine pubbliche italiane. Il check-out della camera e al mattino ma il parco resta accessibile tutto il giorno.</desc>
+    <sym>Lodging</sym><type>Alloggio</type>
+  </wpt>
+
+  <wpt lat="45.4755051" lon="10.7502058">
+    <name>CENA G1 - Country House Le Palazzole</name>
+    <desc>Via Palazzole 1/2, 37017 Cola VR. Tel 344 299 9001. Voto 4,6/5. CHIUSO IL MARTEDI. Orario 12:00-14:00 e 19:00-22:00. Circa 550 m dal parco termale: SI RAGGIUNGE A PIEDI, la moto resta ferma fino al mattino. Alternativa: Agriturismo Le Tese, Loc. Tese 2 - chiuso il lunedi e a pranzo apre solo sabato e domenica; senza prenotazione possono respingere.</desc>
+    <sym>Restaurant</sym><type>Sosta</type>
+  </wpt>
+
+  <!-- ================= PUNTI DI INTERESSE ================= -->
+
+  <wpt lat="45.8136000" lon="10.7924000">
+    <name>POI - Limone sul Garda</name>
+    <desc>Borgo fra la parete e l'acqua, con le limonaie a terrazze. Per secoli raggiungibile solo via lago o per sentieri di montagna. Nel 1979 qui e stata individuata l'Apolipoproteina A-1 Milano, mutazione genetica che protegge le arterie: tutti i portatori discendono da una sola coppia sposatasi in paese nella seconda meta del Settecento. Centro pedonale e affollato: in alta stagione la sosta e un problema, si puo guardare dalla strada alta e proseguire.</desc>
+    <sym>City (Small)</sym><type>POI</type>
+  </wpt>
+
+  <wpt lat="45.5040918" lon="10.7324875">
+    <name>POI - Castello Scaligero di Lazise</name>
+    <desc>Via Castello, 37017 Lazise VR. Voto 4,6/5. Mura scaligere che scendono fino all'acqua. Nel 983 l'imperatore Ottone II concesse a Lazise piena autonomia civica: e considerato il primo Comune libero d'Italia. Il castello e proprieta privata e non si visita: si gira attorno alle mura. Centro storico chiuso al traffico, parcheggi fuori dalle mura.</desc>
+    <sym>Castle</sym><type>POI</type>
+  </wpt>
+
+  <!-- ================= DEVIAZIONI DI EMERGENZA ================= -->
+
+  <wpt lat="45.8080000" lon="10.7830000">
+    <name>ALT. 1 - Salita per Bassanega da Limone</name>
+    <desc>SE LA FORRA E CHIUSA: da Limone si sale all'altopiano di Tremosine per Bassanega. Si perde la gola ma si raggiunge comunque la Terrazza del Brivido. Coordinata indicativa dell'imbocco: verificare sul navigatore.</desc>
+    <sym>Waypoint</sym><type>Alternativa</type>
+  </wpt>
+
+  <wpt lat="45.7180000" lon="10.7180000">
+    <name>ALT. 2 - Deviazione per Tignale</name>
+    <desc>SE LA FORRA E CHIUSA: dalla Gardesana si devia per Tignale e si raggiunge l'altopiano da sud. Coordinata indicativa dell'imbocco: verificare sul navigatore.</desc>
+    <sym>Waypoint</sym><type>Alternativa</type>
+  </wpt>
+
+  <!-- ================= EMERGENZE ================= -->
+
+  <wpt lat="45.6717817" lon="11.9283021">
+    <name>SOS - Ospedale San Giacomo Apostolo</name>
+    <desc>Via dei Carpani 16, Castelfranco Veneto. Tel 0423 7321. Presidio di base. Emergenza unica 112. NOTA: dentro la Forra e in molte gallerie della Gardesana la copertura telefonica e assente.</desc>
+    <sym>Medical Facility</sym><type>Emergenza</type>
+  </wpt>
+
+  <!-- ================= ROTTA - GIORNO 1 ================= -->
+
+  <rte>
+    <name>G1 - La risalita: Piazza Giorgione &gt; Cola di Lazise</name>
+    <desc>Circa 290 km. Autostrada fino a Desenzano, poi Gardesana Occidentale, Forra, altopiano di Tremosine, discesa su Limone, pranzo a Riva, Gardesana Orientale fino a Cola. VERIFICARE che il navigatore faccia salire la Forra e non tenti di scenderla: e a senso unico permanente.</desc>
+    <rtept lat="45.6728257" lon="11.9254171"><name>G1-01 START Piazza Giorgione</name>
+      <desc>Partenza 08:30 nell'orario tipo. A31 da Vicenza Nord, poi A4.</desc></rtept>
+    <rtept lat="45.4561000" lon="10.5230000"><name>G1-02 Desenzano - PIENO</name>
+      <desc>Pieno completo. Da qui in poi si guida.</desc></rtept>
+    <rtept lat="45.6880000" lon="10.6600000"><name>G1-03 Gargnano</name>
+      <desc>Gardesana Occidentale. Gallerie e strettoie: visiera chiara e pulita.</desc></rtept>
+    <rtept lat="45.7741000" lon="10.7659000"><name>G1-04 SP38 FORRA - salita</name>
+      <desc>Sei chilometri a passo lento. Non si torna indietro.</desc></rtept>
+    <rtept lat="45.7686000" lon="10.7593000"><name>G1-05 Terrazza del Brivido</name>
+      <desc>423 m. Consumazione gradita, moto in sosta esterna.</desc></rtept>
+    <rtept lat="45.8136000" lon="10.7924000"><name>G1-06 Limone sul Garda</name>
+      <desc>Discesa da Vesio sulla SP115. Limonaie visibili dalla strada alta.</desc></rtept>
+    <rtept lat="45.8857400" lon="10.8392753"><name>G1-07 PRANZO Riva - Leon d'Oro</name>
+      <desc>Un'ora larga. Moto in Via Giardini di Porta Orientale.</desc></rtept>
+    <rtept lat="45.5040918" lon="10.7324875"><name>G1-08 Lazise</name>
+      <desc>SS249 verso sud. ATTENZIONE: nel pomeriggio i tempi raddoppiano.</desc></rtept>
+    <rtept lat="45.4740076" lon="10.7432898"><name>G1-09 ARRIVO Villa dei Cedri</name>
+      <desc>Check-in e prima immersione serale. La moto non si tocca fino a domani.</desc></rtept>
+  </rte>
+
+  <!-- ================= ROTTA - GIORNO 2 ================= -->
+
+  <rte>
+    <name>G2 - Il rientro: Cola di Lazise &gt; Piazza Giorgione</name>
+    <desc>Circa 145 km, quasi tutti autostradali. Mattina e primo pomeriggio nel parco termale, uscita verso le 15:30, casello A4 di Peschiera a una decina di minuti, poi A4 fino a Vicenza e A31.</desc>
+    <rtept lat="45.4740076" lon="10.7432898"><name>G2-01 Villa dei Cedri</name>
+      <desc>Check-out camera al mattino, bagagli sulla moto, si torna nel parco leggeri.</desc></rtept>
+    <rtept lat="45.4755051" lon="10.7502058"><name>G2-02 Pranzo - Le Palazzole o in struttura</name>
+      <desc>Piatti leggeri: l'acqua a 37 gradi con lo stomaco pieno non e una buona idea.</desc></rtept>
+    <rtept lat="45.4360000" lon="10.6940000"><name>G2-03 Casello A4 Peschiera</name>
+      <desc>Uscita dal parco verso le 15:30.</desc></rtept>
+    <rtept lat="45.6728257" lon="11.9254171"><name>G2-04 END Piazza Giorgione</name>
+      <desc>Chiusura anello.</desc></rtept>
+  </rte>
+</gpx>
