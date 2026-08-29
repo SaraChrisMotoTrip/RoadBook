@@ -104,6 +104,29 @@ const GIRI = [
       { n: "6h 30'", e: "in sella" },
       { n: "0",    e: "dislivello" }
     ]
+  },
+  {
+    cartella: "08-pasubio-garda-valsugana",
+    numero:      "05",
+    zona:        "Pasubio · Garda · Valsugana",
+    titolo:      "Dal Pasubio al Garda",
+    sottotitolo: "E rientro per la Valsugana",
+    data:        "Giro in giornata — da primavera a autunno, mai di martedì",
+    descrizione: "Un grande anello che in sette ore attraversa quattro nature di strada: la pianura vicentina, la gola dell'Astico, il valico di guerra del Pasubio a 1.163 metri e il clima mediterraneo del Garda.",
+    copertina: "cover.jpg",
+    roadbook: "index.html",
+    pdf:      "roadbook.pdf",
+    gpx:      "traccia.gpx",
+    youtube: "",
+    mp4:     "",
+    instagram: "https://www.instagram.com/reel/DcnbDYztB-b/",
+    foto: [],
+    numeri: [
+      { n: "≈340",  e: "chilometri" },
+      { n: "1.163", e: "quota max" },
+      { n: "7h",    e: "in sella" },
+      { n: "4",     e: "nature di strada" }
+    ]
   }
   // ,{ ... prossimo giro qui ... }
 ];
