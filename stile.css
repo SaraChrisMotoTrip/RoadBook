@@ -450,6 +450,78 @@ a:focus-visible,.scheda:focus-visible{
   border:1px solid var(--bordo);
 }
 
+
+/* =============================================================
+   BUSTINA E MODULO CONTATTI
+   ============================================================= */
+
+.bustina{
+  position:absolute; top:18px; right:20px; z-index:3;
+  display:inline-flex; align-items:center; gap:8px;
+  padding:8px 14px;
+  border:1px solid var(--fluo);
+  border-radius:30px;
+  color:var(--fluo);
+  background:rgba(11,12,13,.55);
+  backdrop-filter:blur(3px);
+  text-decoration:none;
+  font-family:"Barlow Condensed",sans-serif;
+  text-transform:uppercase; letter-spacing:.16em;
+  font-size:13px; font-weight:600;
+  transition:background .16s ease, color .16s ease;
+}
+.bustina:hover{ background:var(--fluo); color:var(--nero); }
+.bustina svg{ display:block; }
+@media (max-width:520px){
+  .bustina span{ display:none; }      /* sul telefono resta la sola bustina */
+  .bustina{ padding:9px 10px; top:14px; right:14px; }
+}
+
+.piede a{ color:var(--fluo); text-decoration:none; }
+.piede a:hover{ text-decoration:underline; }
+
+/* --- il modulo ---------------------------------------------- */
+
+.campo{ display:block; margin-bottom:16px; }
+.campo > span{
+  display:block; margin-bottom:6px;
+  font-family:"Barlow Condensed",sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:13px; color:var(--testo-2);
+}
+.campo input,
+.campo textarea{
+  width:100%;
+  padding:11px 13px;
+  background:#101314;
+  border:1px solid var(--bordo);
+  border-radius:9px;
+  color:var(--testo);
+  font-family:"Inter",sans-serif;
+  font-size:15px; line-height:1.5;
+}
+.campo textarea{ resize:vertical; min-height:120px; }
+.campo input::placeholder,
+.campo textarea::placeholder{ color:#5f676d; }
+.campo input:focus,
+.campo textarea:focus{
+  outline:none;
+  border-color:var(--fluo);
+  box-shadow:0 0 0 3px rgba(207,240,43,.16);
+}
+
+.modulo button.bottone{
+  cursor:pointer;
+  font-family:"Barlow Condensed",sans-serif;
+  margin-top:4px;
+}
+
+.blocco.riuscito{
+  border-color:var(--fluo);
+  margin-bottom:30px;
+}
+.blocco.riuscito h3{ color:var(--fluo); }
+
 /* --- piede -------------------------------------------------- */
 
 .piede{

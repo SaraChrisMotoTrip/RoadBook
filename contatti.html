@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contatti — Roadbook</title>
+<meta name="description" content="Scrivi a Sara e Christian: consigli, correzioni, racconti di chi ha rifatto uno dei nostri giri.">
+<meta name="theme-color" content="#0B0C0D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+<header class="testata">
+  <img class="testata-foto" src="media/moto.jpg" alt="">
+  <div class="testata-in">
+    <p class="occhiello">Roadbook · Scrivici</p>
+    <h1>Contatti</h1>
+    <p>Hai rifatto uno dei nostri giri? Hai trovato una strada chiusa, un locale che ha cambiato orario, o semplicemente vuoi dirci qualcosa? Scrivi pure.</p>
+  </div>
+</header>
+<div class="strisce"></div>
+
+<main class="foglio">
+  <a class="indietro" href="index.html">← Tutti i giri</a>
+
+  <!-- messaggio che compare al ritorno dall'invio -->
+  <div id="inviato" hidden>
+    <div class="blocco riuscito">
+      <h3>Messaggio inviato</h3>
+      <p>Grazie, l'abbiamo ricevuto. Rispondiamo appena possiamo — non siamo un ufficio, siamo due che vanno in moto.</p>
+      <a class="bottone" href="index.html">Torna ai percorsi</a>
+    </div>
+  </div>
+
+  <div class="blocchi">
+
+    <section class="blocco">
+      <h3>Scrivici</h3>
+      <p>I campi con l'asterisco servono per poterti rispondere.</p>
+
+      <form class="modulo" action="https://formsubmit.co/sarachrismototrip@gmail.com" method="POST">
+
+        <!-- impostazioni del servizio, non si vedono -->
+        <input type="hidden" name="_subject" value="Roadbook — nuovo messaggio dal sito">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://sarachrismototrip.github.io/RoadBook/contatti.html?inviato=1">
+        <!-- trappola per i robot: chi la compila non e' umano -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <label class="campo">
+          <span>Nome *</span>
+          <input type="text" name="Nome" required autocomplete="given-name">
+        </label>
+
+        <label class="campo">
+          <span>Cognome *</span>
+          <input type="text" name="Cognome" required autocomplete="family-name">
+        </label>
+
+        <label class="campo">
+          <span>Da dove scrivi</span>
+          <input type="text" name="Provenienza" placeholder="Città, regione o nazione" autocomplete="address-level2">
+        </label>
+
+        <label class="campo">
+          <span>La tua email *</span>
+          <input type="email" name="email" required autocomplete="email" placeholder="per poterti rispondere">
+        </label>
+
+        <label class="campo">
+          <span>Il messaggio *</span>
+          <textarea name="Messaggio" rows="7" required placeholder="Scrivi qui quello che vuoi dirci."></textarea>
+        </label>
+
+        <button class="bottone" type="submit">Invia il messaggio</button>
+      </form>
+    </section>
+
+    <section class="blocco">
+      <h3>Due parole</h3>
+      <p>Questo sito è il diario di bordo di due motociclisti. I roadbook sono liberi e gratuiti: si scaricano, si stampano, si passano agli amici.</p>
+      <p>Se uno dei nostri giri ti è tornato utile ci fa piacere saperlo. E se hai trovato un errore — un orario cambiato, una strada chiusa, un locale che ha chiuso davvero — segnalarcelo è il modo migliore per tenere le guide vive.</p>
+      <p class="gpx-nota"><strong>Sulla privacy</strong> — Quello che scrivi qui arriva soltanto alla nostra casella di posta, attraverso il servizio FormSubmit che si occupa dell'invio. Non teniamo elenchi, non mandiamo newsletter e non passiamo niente a nessuno.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="piede">Buone strade <b>·</b> Roadbook <b>·</b> <a href="index.html">I percorsi</a></footer>
+
+<script>
+/* se si torna qui dopo l'invio, mostra la conferma e nasconde il modulo */
+if (new URLSearchParams(location.search).get("inviato") === "1") {
+  document.getElementById("inviato").hidden = false;
+  document.querySelector(".blocchi").hidden = true;
+  document.querySelector(".testata-in p").textContent =
+    "Il tuo messaggio è partito.";
+}
+</script>
+
+</body>
+</html>

@@ -3,12 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roadbook — Itinerari in moto</title>
-  <link rel="icon" href="/RoadBook/favicon.ico" sizes="any">
-<link rel="icon" href="/RoadBook/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/RoadBook/apple-touch-icon.png">
-<link rel="manifest" href="/RoadBook/site.webmanifest">
-<meta name="description" content="Itinerari in moto in Veneto: guida da sfogliare, PDF da stampare, traccia GPX e video del giro.">
+<title>Roadbook — Il diario di bordo di due motociclisti</title>
+
+<!-- ===== descrizione per Google e anteprima quando si condivide il link ===== -->
+<meta name="description" content="Il diario di bordo di due motociclisti. Ogni viaggio diventa una guida completa: percorsi collaudati, mappe, tracce GPX per il navigatore, storie e consigli.">
+<link rel="canonical" href="https://sarachrismototrip.github.io/RoadBook/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Roadbook">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://sarachrismototrip.github.io/RoadBook/">
+<meta property="og:title" content="Roadbook — Il diario di bordo di due motociclisti">
+<meta property="og:description" content="Percorsi collaudati, mappe dettagliate e tracce GPX pronte per il navigatore. Storie, aneddoti e consigli per non trascurare alcun dettaglio.">
+<meta property="og:image" content="https://sarachrismototrip.github.io/RoadBook/media/social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La moto pronta a partire.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Roadbook — Il diario di bordo di due motociclisti">
+<meta name="twitter:description" content="Percorsi collaudati, mappe dettagliate e tracce GPX pronte per il navigatore.">
+<meta name="twitter:image" content="https://sarachrismototrip.github.io/RoadBook/media/social.jpg">
+<!-- ========================================================================= -->
+
 <meta name="theme-color" content="#0B0C0D">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +38,20 @@
   <img class="apertura-foto" src="media/moto.jpg" alt="">
   <div class="apertura-in">
 
+      <a class="bustina" href="contatti.html" aria-label="Scrivici">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+          <path d="M2 7l10 6 10-6"></path>
+        </svg>
+        <span>Scrivici</span>
+      </a>
+
+
     <div class="apertura-testo">
       <p class="occhiello">Itinerari in moto · Veneto</p>
       <h1>Roadbook<span>Le strade, i passi, le soste. Un giro per volta.</span></h1>
-      <p class="intro">Il Diario di Viaggio di due motociclisti improvvisati, ma con tanta voglia di stare sulle due ruote. Viaggiare senza meta ha il suo fascino, ma il tempo del weekend è prezioso: per questo trasformiamo ogni nostro viaggio in una guida strutturata, per chi come noi parte all'avventura ma cerca un po' di organizzazione. Percorsi collaudati, soste calibrate e tracce GPX pronte per il navigatore. Storie, aneddoti, curiosità e consigli per non trascurare alcun dettaglio.</p>
+      <p class="intro">Il diario di bordo di due motociclisti improvvisati, ma con tanta voglia di vivere le due ruote. Ogni nostro viaggio diventa una guida strutturata per chi, come noi, parte all'avventura ma cerca un po' di organizzazione.<br>Percorsi collaudati, mappe dettagliate e tracce GPX pronte per il navigatore.<br>Storie, aneddoti, curiosità e consigli per non trascurare alcun dettaglio.</p>
       <div class="strisce"></div>
 
       <figure class="noi">
@@ -46,7 +73,7 @@
   <div class="griglia" id="griglia"></div>
 </main>
 
-<footer class="piede">Buone strade <b>·</b> Roadbook</footer>
+<footer class="piede">Buone strade <b>·</b> Roadbook <b>·</b> <a href="contatti.html">Scrivici</a></footer>
 
 <!-- prima i dati, poi il codice che li disegna -->
 <script src="giri.js"></script>
