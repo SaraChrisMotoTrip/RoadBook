@@ -334,7 +334,8 @@ a{ color:inherit; }
   margin-bottom:40px;
 }
 @media (min-width:760px){
-  .blocchi{ grid-template-columns:repeat(2,1fr); }   /* quattro riquadri, due per riga */
+  .blocchi{ grid-template-columns:repeat(2,1fr); }
+  .blocchi.contatti{ grid-template-columns:1.25fr .75fr; }   /* quattro riquadri, due per riga */
 }
 .blocco{
   background:var(--pannello);
@@ -483,6 +484,10 @@ a:focus-visible,.scheda:focus-visible{
 /* --- il modulo ---------------------------------------------- */
 
 .campo{ display:block; margin-bottom:16px; }
+.due{ display:grid; gap:0 14px; grid-template-columns:1fr; }
+@media (min-width:520px){
+  .due{ grid-template-columns:1fr 1fr; }   /* nome e cognome affiancati */
+}
 .campo > span{
   display:block; margin-bottom:6px;
   font-family:"Barlow Condensed",sans-serif;
