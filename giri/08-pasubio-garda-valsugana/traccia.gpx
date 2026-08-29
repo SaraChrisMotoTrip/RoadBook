@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Roadbook 05 - Dal Pasubio al Garda"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>Dal Pasubio al Garda e rientro in Valsugana</name>
+    <desc>Roadbook 05 v1. Piazza Giorgione (Castelfranco Veneto) - SS53 - Schio - Contra Pria (Arsiero) - Torrebelvicino - SP46 Valli del Pasubio - PIAN DELLE FUGAZZE 1.163 m - Vallarsa - Rovereto - Riva del Garda - Cologna di Tenno - Canale di Tenno - Arco - Valle dei Laghi - Trento - SS47 Valsugana - Cornale - Castelfranco. Circa 340 km, nessun pedaggio. Percorso senza data, MAI DI MARTEDI (trattoria chiusa). DUE VERIFICHE PRIMA DI PARTIRE: 1) il Pian delle Fugazze NON ha chiusura stagionale programmata ma chiude occasionalmente per valanghe o smottamenti - consultare le comunicazioni sulla viabilita della Provincia autonoma di Trento; 2) sulla SP46 fra Torrebelvicino e il valico e in vigore un cantiere con impianto semaforico a tempo indeterminato (ordinanza Vi.abilita 181/2026 dal 25/05/2026). Coordinate delle soste verificate su Google Places, agosto 2026.</desc>
+  </metadata>
+
+  <!-- ================= SOSTE E PUNTI OPERATIVI ================= -->
+
+  <wpt lat="45.6728257" lon="11.9254171">
+    <name>START-END Piazza Giorgione</name>
+    <desc>Piazza Giorgione, 31033 Castelfranco Veneto TV. Ritrovo, partenza e chiusura anello. Partenza ore 08:00 nell'orario tipo: serve margine per il semaforo di cantiere sulla SP46. Serbatoio pieno alla partenza.</desc>
+    <sym>Flag, Blue</sym><type>Start</type>
+  </wpt>
+
+  <wpt lat="45.8604447" lon="11.0014153">
+    <name>CARBURANTE - Tamoil Rovereto 24h</name>
+    <desc>Via Per Marco 15/B, 38068 Rovereto TN. APERTO 24 ORE, vicino al casello A22 Rovereto Sud. Circa 3 km di deviazione dalla direttrice per Riva. PERCHE QUI: l'Eni di Via del Garda ha pausa 12:30-14:30 e domenica chiuso, l'Esso di Via Benacense chiude sabato alle 13 e domenica - e la tabella di marcia passa da Rovereto a mezzogiorno. ATTENZIONE: alcune recensioni segnalano differenze fra il prezzo esposto e quello applicato alla colonnina: controllare prima di erogare.</desc>
+    <sym>Gas Station</sym><type>Servizio</type>
+  </wpt>
+
+  <wpt lat="45.9150889" lon="10.8417766">
+    <name>PRANZO - Trattoria a Pie di Castello</name>
+    <desc>Via al Cingol Ros 38, 38060 Cologna di Tenno TN. Tel 0464 521065. Voto 4,5/5 su oltre 2.300 recensioni. CHIUSA IL MARTEDI. Lunedi, mercoledi e giovedi SOLO PRANZO 12:00-14:30; venerdi, sabato e domenica anche cena. PRENOTARE: locale piccolo e molto frequentato. Il piatto da chiedere e la CARNE SALADA, specialita dell'alto Garda.</desc>
+    <sym>Restaurant</sym><type>Sosta</type>
+  </wpt>
+
+  <wpt lat="45.9364839" lon="11.7242504">
+    <name>SOSTA - Birreria Cornale</name>
+    <desc>Via Fosse di Sotto 7, 36052 ENEGO VI (non Cismon del Grappa, pur trovandosi sul fondovalle della SS47). Tel 344 786 6976. Voto 4,2/5 su oltre 4.000 recensioni. APERTA TUTTI I GIORNI 11:00-23:00. ATTENZIONE ALL'ALCOL: birreria bavarese con misure generose - una recensione racconta di aver ordinato "un po' di birra" e di essersi vista arrivare quattro caraffe da un litro. Restano 45 km sulla Valsugana presidiata: PER CHI GUIDA ANALCOLICA. Prezzi segnalati come alti rispetto alla qualita.</desc>
+    <sym>Bar</sym><type>Sosta</type>
+  </wpt>
+
+  <!-- ================= PUNTI DI INTERESSE ================= -->
+
+  <wpt lat="45.7128000" lon="11.3596000">
+    <name>POI - Schio, Fabbrica Alta</name>
+    <desc>Il cuore dell'archeologia industriale vicentina, eredita di Alessandro Rossi. Attraversamento del centro con pedonalita diffusa e cambi di pavimentazione fra porfido e asfalto, che sul bagnato hanno aderenze molto diverse. Zone a traffico limitato. Coordinata indicativa: verificare sul navigatore.</desc>
+    <sym>Building</sym><type>POI</type>
+  </wpt>
+
+  <wpt lat="45.8194175" lon="11.3678885">
+    <name>POI - Contra Pria (Arsiero)</name>
+    <desc>Contra' Pria 21, 36010 Arsiero VI. Voto 4,5/5 su oltre 4.400 recensioni. Gola calcarea scavata dal torrente Astico, pozze verdi e profonde, resti di mulini e segherie ad acqua. PARCHEGGIO A PAGAMENTO circa 1 euro/ora o 5 euro giornata, area gratuita dopo il ponte. Ordinanza comunale vieta i tuffi dal ponte e dalle rocce. ATTENZIONE: e un VICOLO CIECO logistico - per riprendere la SP46 si torna indietro verso Torrebelvicino. Fondo umido e fogliame nella parte in ombra.</desc>
+    <sym>Scenic Area</sym><type>POI</type>
+  </wpt>
+
+  <wpt lat="45.7173288" lon="11.3242169">
+    <name>BIVIO - Torrebelvicino, innesto SP46</name>
+    <desc>Punto in cui si riprende la SP46 del Pasubio dopo il ritorno da Contra Pria. NON prendere il Passo della Borcola come scorciatoia: e lento, fa saltare l'orario del pranzo, e d'inverno e chiuso per ordinanza stagionale dalla localita Incapo al confine di provincia.</desc>
+    <sym>Waypoint</sym><type>Bivio</type>
+  </wpt>
+
+  <wpt lat="45.7686000" lon="11.1836000">
+    <name>VALICO - Pian delle Fugazze 1.163 m</name>
+    <desc>Valico fra la Val Leogra e la Vallarsa, separa la catena del Sengio Alto dal massiccio del Pasubio. Il confine fra le province di Vicenza e Trento e 500 m PIU A VALLE del passo. CANTIERE CON SEMAFORO in vigore sulla salita da Torrebelvicino, a tempo indeterminato. NESSUNA CHIUSURA STAGIONALE PROGRAMMATA ma chiusure occasionali per pericolo valanghe e smottamenti: quando scattano si interrompe il collegamento Vicenza-Trentino attraverso la Vallarsa. Attenzione ai ciclisti in salita e alle moto in discesa che tagliano le traiettorie cieche. Coordinata indicativa: verificare sul navigatore.</desc>
+    <sym>Summit</sym><type>Attenzione</type>
+  </wpt>
+
+  <wpt lat="45.8857400" lon="10.8392753">
+    <name>POI - Riva del Garda</name>
+    <desc>L'estremita nord del lago, quota 65 m. Fra il valico e qui ci sono 1.100 metri di dislivello e spesso una decina di gradi di differenza: e il punto in cui si aprono le giacche. Traffico gardesano denso nelle rotonde.</desc>
+    <sym>City (Medium)</sym><type>POI</type>
+  </wpt>
+
+  <wpt lat="45.9200000" lon="10.8450000">
+    <name>POI - Canale di Tenno</name>
+    <desc>Borgo medievale intatto a circa 420 m, nell'elenco dei Borghi piu belli d'Italia. Pietra a vista, archi, ballatoi in legno, vicoli acciottolati. Dal dopoguerra ospita la Casa degli Artisti. BORGO PEDONALE: si parcheggia fuori e si entra a piedi. A due passi dalla trattoria. Poco sotto, il Lago di Tenno con l'acqua verde smeraldo e l'isoletta che emerge nei periodi di magra. Coordinata indicativa.</desc>
+    <sym>City (Small)</sym><type>POI</type>
+  </wpt>
+
+  <!-- ================= EMERGENZE ================= -->
+
+  <wpt lat="45.6717817" lon="11.9283021">
+    <name>SOS - Ospedale San Giacomo Apostolo</name>
+    <desc>Via dei Carpani 16, Castelfranco Veneto. Tel 0423 7321. Presidio di base.</desc>
+    <sym>Medical Facility</sym><type>Emergenza</type>
+  </wpt>
+
+  <wpt lat="45.8890000" lon="11.0400000">
+    <name>SOS - Ospedale Santa Maria del Carmine, Rovereto</name>
+    <desc>Corso Verona 4, Rovereto TN. Tel 0464 403111. Presidio del quadrante trentino. NOTA: fra Torrebelvicino e la Vallarsa non ci sono presidi - il primo ospedale a monte e Rovereto, a valle Schio. Copertura telefonica discontinua nei tratti in gola e sui versanti in ombra. Emergenza unica 112. Coordinata indicativa: verificare.</desc>
+    <sym>Medical Facility</sym><type>Emergenza</type>
+  </wpt>
+
+  <!-- ================= ROTTA ================= -->
+
+  <rte>
+    <name>Dal Pasubio al Garda - circa 340 km</name>
+    <desc>Grande anello in senso antiorario. VERIFICARE che il navigatore faccia il ritorno da Contra Pria verso Torrebelvicino e non tenti il Passo della Borcola. Nessun pedaggio: tutto su strade ordinarie.</desc>
+
+    <rtept lat="45.6728257" lon="11.9254171"><name>01 START Piazza Giorgione</name>
+      <desc>Partenza 08:00. SS53 Castellana verso ovest, poi salita su Breganze.</desc></rtept>
+    <rtept lat="45.7128000" lon="11.3596000"><name>02 Schio - Fabbrica Alta</name>
+      <desc>Attraversamento del centro a velocita bassa. Porfido e asfalto alternati.</desc></rtept>
+    <rtept lat="45.8194175" lon="11.3678885"><name>03 Contra Pria - SOSTA</name>
+      <desc>Gola dell'Astico. Parcheggio a pagamento. Vicolo cieco: si torna indietro.</desc></rtept>
+    <rtept lat="45.7173288" lon="11.3242169"><name>04 Torrebelvicino - innesto SP46</name>
+      <desc>Ritorno a sud per riprendere la strada del Pasubio.</desc></rtept>
+    <rtept lat="45.7686000" lon="11.1836000"><name>05 PIAN DELLE FUGAZZE 1.163 m</name>
+      <desc>Scollinamento. Cantiere con semaforo sulla salita.</desc></rtept>
+    <rtept lat="45.8604447" lon="11.0014153"><name>06 PIENO - Tamoil Rovereto 24h</name>
+      <desc>Unico che non chiude a pranzo ne la domenica.</desc></rtept>
+    <rtept lat="45.8857400" lon="10.8392753"><name>07 Riva del Garda</name>
+      <desc>Si sale verso Tenno: 400 m di dislivello in dieci minuti.</desc></rtept>
+    <rtept lat="45.9150889" lon="10.8417766"><name>08 PRANZO - Pie di Castello</name>
+      <desc>Arrivo entro le 12:45. Cucina chiusa alle 14:30. Prenotare.</desc></rtept>
+    <rtept lat="45.9200000" lon="10.8450000"><name>09 Canale di Tenno</name>
+      <desc>Borgo pedonale, sosta breve a piedi.</desc></rtept>
+    <rtept lat="45.9180000" lon="10.8860000"><name>10 Arco</name>
+      <desc>Discesa e prosecuzione verso la Valle dei Laghi sulla SS45bis.</desc></rtept>
+    <rtept lat="46.0679000" lon="11.1211000"><name>11 Trento - innesto SS47</name>
+      <desc>Da qui limiti rispettati alla lettera: tratta costantemente presidiata.</desc></rtept>
+    <rtept lat="45.9364839" lon="11.7242504"><name>12 SOSTA - Birreria Cornale</name>
+      <desc>Spezza la Valsugana in due. Per chi guida: analcolica.</desc></rtept>
+    <rtept lat="45.6728257" lon="11.9254171"><name>13 END Piazza Giorgione</name>
+      <desc>Chiusura anello.</desc></rtept>
+  </rte>
+</gpx>
